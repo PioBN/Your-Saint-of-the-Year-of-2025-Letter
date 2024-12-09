@@ -1,0 +1,181 @@
+body {
+  font-family: Roboto, sans-serif, Arial;
+  margin-left: 30px;
+  background: midnightblue;
+  padding-bottom: 50px;
+  user-select: none;
+  pointer-events: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: midnightblue; /* Set a background color */
+}
+
+main {
+  margin-top: 0.5rem;
+}
+
+
+.chapeau-de-noel {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.chapeau-de-noel1 {
+  transform: rotateY(180deg);
+  margin-left: 0.9rem;
+}
+
+.chapeau-de-noel2 {
+  margin-right: 0.9rem;
+}
+
+.headers {
+  display: flex;
+  flex-direction: column;
+  color: red;
+  text-shadow: 1px 1px 3px darkred;
+  text-align: center;
+  font-weight: 700;
+}
+
+.header2 {
+  margin-top: 6px;
+}
+
+.intro {
+  color: red;
+  text-shadow: 1px 1px 1px darkred;
+  text-align: center;
+}
+
+.message-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.message {
+  background: red;
+  color: white;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px whitesmoke;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 70px;
+  width: 600px;
+  line-height: 30px;
+}
+
+.author {
+  color: gold;
+  text-shadow: 1px 1px 2px goldenrod;
+}
+
+.question {
+  font-size: 1.5rem;
+  color: red;
+  text-shadow: 1px 1px 3px red;
+  text-align: center;
+  line-height: 35px;
+}
+
+/* Media Queries */
+
+/* For small screens (mobile phones) */
+@media screen and (max-width: 600px) {
+  body {
+    margin-left: 10px;
+  }
+
+  header {
+    align-items: center;
+  }
+
+  .headers {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .message {
+    width: 90%;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 40px;
+  }
+
+  .intro {
+    font-size: 1.5rem;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+}
+
+/* For medium screens (tablets) */
+@media screen and (max-width: 768px) {
+  header {
+    align-items: center;
+  }
+
+  .message {
+    width: 80%;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-radius: 50px;
+  }
+
+  .intro {
+    font-size: 1.8rem;
+  }
+
+  .author {
+    font-size: 1.2rem;
+  }
+}
+
+/* For large screens (laptops and desktops) */
+@media screen and (min-width: 1024px) {
+  .message {
+    width: 600px;
+    font-size: 1.3rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .intro {
+    font-size: 2rem;
+  }
+
+  .author {
+    font-size: 1.3rem;
+  }
+}
+
+/* For extra large screens (larger desktops) */
+@media screen and (min-width: 1440px) {
+  .message {
+    width: 700px;
+    font-size: 1.4rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .intro {
+    font-size: 2.2rem;
+  }
+
+  .author {
+    font-size: 1.4rem;
+  }
+}
